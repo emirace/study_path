@@ -50,7 +50,7 @@ const NewsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 p-4 max-w-5xl mx-auto">
+    <section id="blog" className="py-16 p-4 max-w-5xl mx-auto">
       <div className="w-full mx-auto">
         <p className="text-teal-500 uppercase font-semibold tracking-wide text-sm">
           LATEST UPDATE

@@ -4,7 +4,10 @@ import { TfiMouse } from "react-icons/tfi";
 
 const Hero: React.FC = () => {
   return (
-    <section className="text-white bg-teal-600 pt-24 px-4 md:pt-0 md:px-0 m-2 md:m-0 rounded-lg md:bg-white flex flex-col md:flex-row items-center justify-between relative">
+    <section
+      id="home"
+      className="text-white bg-teal-600 pt-24 px-4 md:pt-0 md:px-0 m-2 md:m-0 rounded-lg md:bg-white flex flex-col md:flex-row items-center justify-between relative"
+    >
       {/* Left Side Content */}
       <div className="hidden md:block p-2">
         <img src={IMAGES.hero} className="h-auto w-full" />

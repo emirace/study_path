@@ -43,7 +43,7 @@ const services = [
 
 function Services() {
   return (
-    <section className="relative w-full p-2 pt-20 md:p-0 md:pt-0">
+    <section id="services" className="relative w-full p-2 pt-20 md:p-0 md:pt-0">
       <div className="hidden md:block p-2 ">
         <img src={IMAGES.services} className="h-auto w-full" />
       </div>

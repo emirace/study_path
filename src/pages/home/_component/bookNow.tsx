@@ -2,7 +2,7 @@ import IMAGES from "../../../assets/images/images";
 
 function BookNow() {
   return (
-    <div className="relative w-full p-2 md:p-0">
+    <div id="contact" className="relative w-full p-2 md:p-0">
       <div className="hidden md:block p-2 left-0 w-full">
         <img src={IMAGES.background2} className="h-auto w-full" />
       </div>

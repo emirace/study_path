@@ -4,7 +4,10 @@ import { Link } from "react-router";
 
 const About: React.FC = () => {
   return (
-    <section className="flex items-center flex-col md:flex-row gap-8 md:gap-4 bg-white px-2 pt-20 md:py-0 md:px-20 lg:px-32">
+    <section
+      id="about"
+      className="flex items-center flex-col md:flex-row gap-8 md:gap-4 bg-white px-2 pt-20 md:py-0 md:px-20 lg:px-32"
+    >
       <div className="w-full md:w-1/2 flex flex-col md:items-center -mt-20 md:mt-0 justify-end h-[25rem] md:h-[32rem] flex-wrap md:px-6 gap-4">
         <img
           src={IMAGES.about1}
