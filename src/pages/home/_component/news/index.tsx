@@ -15,37 +15,37 @@ export interface NewsCardProps {
 const NewsSection: React.FC = () => {
   const newsItems = [
     {
-      title: "Preview About Future Incentives For Truck Drivers",
-      category: "Truck News",
+      title: "Study Tips to Ace Your Exams",
+      category: "Study Tips",
       date: "Jan 11, 2025",
       image: IMAGES.new1,
       description:
-        "Learn more about upcoming incentives and opportunities for truck drivers to boost their career.",
-      likes: 123,
-      comments: 45,
-      shares: 10,
+        "Master your exams with these proven study techniques and strategies for success.",
+      likes: 245,
+      comments: 67,
+      shares: 32,
     },
     {
-      title: "Payment Options — Things You Should Know",
-      category: "Finance News",
+      title: "Best Scholarship Opportunities in 2025",
+      category: "Scholarship News",
       date: "Jan 10, 2025",
       image: IMAGES.new2,
       description:
-        "Discover the best payment options for managing your finances efficiently.",
-      likes: 89,
-      comments: 23,
-      shares: 8,
+        "Explore top scholarship programs available in 2025 to help fund your education.",
+      likes: 198,
+      comments: 54,
+      shares: 21,
     },
     {
-      title: "5 Secrets To Boosting Your Employees",
-      category: "Work News",
+      title: "How to Manage Time as a Student",
+      category: "Student Life",
       date: "Jan 09, 2025",
       image: IMAGES.new3,
       description:
-        "Unlock the potential of your workforce with these 5 proven tips for success.",
-      likes: 102,
-      comments: 36,
-      shares: 12,
+        "Learn effective time management tips to balance studies, extracurriculars, and rest.",
+      likes: 310,
+      comments: 85,
+      shares: 43,
     },
   ];
 
