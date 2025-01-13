@@ -62,7 +62,7 @@ const WhyUs: React.FC = () => {
           </div>
         </div>
       </section>
-      <div className="max-w-5xl w-full mx-auto mt-10">
+      <div className="max-w-5xl w-full mx-auto mt-10 px-2">
         <div className="text-xl lg:text-2xl font-bold text-gray-900 mt-2 leading-snug">
           Who We Help
         </div>
