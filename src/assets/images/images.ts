@@ -15,6 +15,7 @@ const IMAGES = {
   whyus1: new URL("./whyus1.jpg", import.meta.url).href,
   whyus2: new URL("./whyus2.jpg", import.meta.url).href,
   whyus3: new URL("./whyus3.jpg", import.meta.url).href,
+  payment: new URL("./payment.jpg", import.meta.url).href,
 };
 
 export default IMAGES;

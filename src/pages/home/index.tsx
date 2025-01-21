@@ -1,3 +1,4 @@
+import { Outlet } from "react-router";
 import About from "./_component/about";
 import BookNow from "./_component/bookNow";
 import Footer from "./_component/footer";
@@ -20,6 +21,7 @@ function Home() {
       <NewsSection />
       <BookNow />
       <Footer />
+      <Outlet />
     </div>
   );
 }

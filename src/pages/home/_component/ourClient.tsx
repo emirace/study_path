@@ -25,8 +25,11 @@ function OurClient() {
               "SCHOOL",
               "UNIVERSITY",
               "LOCATION",
-            ].map((text) => (
-              <div className="text-center text-white text-lg font-bold">
+            ].map((text, index) => (
+              <div
+                key={index}
+                className="text-center text-white text-lg font-bold"
+              >
                 {text}
               </div>
             ))}

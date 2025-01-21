@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +27,7 @@ const Navbar: React.FC = () => {
         isScrolled ? "bg-teal-600 shadow-lg text-white" : "bg-transparent"
       }`}
     >
-      <div className="flex justify-between items-center md:mx-auto max-w-5xl w-full p-4 md:px-0">
+      <div className="flex justify-between items-center md:mx-auto max-w-5xl w-full p-4 py-6 md:px-0">
         {/* Logo */}
         <div className="text-xl font-bold tracking-wide">
           <span className="text-white">STUDY-PATH</span>
@@ -63,9 +64,12 @@ const Navbar: React.FC = () => {
 
         {/* Let’s Talk Button */}
         <div>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-md font-semibold shadow-md transition">
+          <Link
+            to="/register"
+            className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-md font-semibold shadow-md transition"
+          >
             Let’s Talk
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

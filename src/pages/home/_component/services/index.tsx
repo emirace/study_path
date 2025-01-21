@@ -63,7 +63,7 @@ function Services() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 z-10">
             {services.map((service, index) => (
-              <div className="flex items-start gap-4">
+              <div key={index} className="flex items-start gap-4">
                 <div className="text-4xl mt-4">{service.icon}</div>
                 <div
                   key={index}
