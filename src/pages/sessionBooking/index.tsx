@@ -51,7 +51,7 @@ const BookedSessions: React.FC = () => {
         to="/"
         className="text-teal-600 text-lg absolute left-4 font-bold top-4 "
       >
-        STUDY PATH
+        Global Scholars Consulting
       </Link>
 
       <h2 className="text-3xl font-semibold text-center text-teal-600 mb-6">

@@ -1,29 +1,14 @@
-import { useState } from "react";
-import { FiPlus } from "react-icons/fi";
+import { useId, useState } from "react";
+import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 
-function ReadMore({ text }: { text: string }) {
+export default function ReadMore({ text }: { text: string }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const limit = 65;
+  const contentId = useId();
+  const limit = 105;
   return (
-    <div className="relative w-full">
-      {isExpanded ? (
-        <p className="md:absolute md:top-0 md:left-0 text-gray-200 mb-4 bg-teal-600 md:p-2 w-full z-10 md:shadow-md">
-          {text}
-        </p>
-      ) : (
-        <p className="text-gray-200 mb-4  "> {`${text.slice(0, limit)}...`}</p>
-      )}
-      <div
-        onClick={() => setIsExpanded(true)}
-        className="text-white text-xl cursor-pointer"
-      >
-        <FiPlus />
-      </div>
-      {isExpanded && (
-        <div className="fixed inset-0" onClick={() => setIsExpanded(false)} />
-      )}
+    <div className="home-read-more">
+      <p id={contentId}>{isExpanded || text.length <= limit ? text : `${text.slice(0, text.lastIndexOf(" ", limit))}…`}</p>
+      {text.length > limit && <button type="button" aria-expanded={isExpanded} aria-controls={contentId} onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? "Read less" : "Read more"} {isExpanded ? <FiArrowUp /> : <FiArrowDown />}</button>}
     </div>
   );
 }
-
-export default ReadMore;

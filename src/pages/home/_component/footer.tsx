@@ -1,58 +1,15 @@
-import React from "react";
+import { Link } from "react-router";
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
-    <footer className="">
-      <div className="max-w-5xl mx-auto px-6 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info Section */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-teal-600">
-              Study Path
-            </h4>
-            <p className="text-sm mb-4">
-              Helping you make informed decisions with great tools and insights.
-            </p>
-          </div>
-
-          {/* Product Links Section */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Products</h4>
-            <ul className="space-y-2 text-sm">
-              <li>Services</li>
-              <li>Pricing</li>
-              <li>Blog</li>
-              <li>Documentation</li>
-            </ul>
-          </div>
-
-          {/* Quick Links Section */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
-              <li>About</li>
-              <li>Support</li>
-              <li>Privacy</li>
-              <li>Terms</li>
-            </ul>
-          </div>
-
-          {/* Contact Section */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm">
-              <li>Email: info@company.com</li>
-              <li>Phone: +1 234 567 890</li>
-              <li>Location: City, Country</li>
-            </ul>
-          </div>
-        </div>
+    <footer className="home-footer">
+      <div className="home-footer-inner">
+        <div><Link to="/" className="home-brand">Global Scholars<span>Consulting</span></Link><p>Personal guidance for your journey to studying in the USA, from application to arrival.</p></div>
+        <div><h3>Explore</h3><a href="#about">About Us</a><a href="#services">Our Services</a><a href="#blog">News & Insights</a></div>
+        <div><h3>Get Started</h3><Link to="/register">Make an Enquiry</Link><Link to="/book">Book a Session</Link><Link to="/login">Client Login</Link></div>
+        <div><h3>Let’s Connect</h3><p>Have questions about studying in the USA? Start a conversation with our team.</p><Link to="/register" className="home-footer-contact">Contact our team →</Link></div>
       </div>
-      <div className="mt-8 bg-teal-600 text-white p-4 text-center text-sm">
-        © {new Date().getFullYear()} Company. All rights reserved.
-      </div>
+      <div className="home-copyright">© {new Date().getFullYear()} Global Scholars Consulting. All rights reserved.</div>
     </footer>
   );
-};
-
-export default Footer;
+}

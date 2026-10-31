@@ -14,7 +14,7 @@ const Payment = () => {
         to="/"
         className="text-teal-600 text-lg absolute left-4 font-bold top-4 "
       >
-        STUDY PATH
+        Global Scholars Consulting
       </Link>
       <div className="bg-white p-8 rounded-lg shadow-xl w-96">
         <div className="text-center mb-6">
